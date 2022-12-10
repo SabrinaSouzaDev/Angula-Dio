@@ -33,7 +33,7 @@ class CardNews extends HTMLElement {
         cardRight.setAttribute("class", "card_right" );
 
         const newsImage = document.createElement("img");
-        newsImage.src = this.getAttribute("photo") || "/assets/img/defoult.png"
+        newsImage.src = this.getAttribute("photo") || "./assets/img/defoult.png"
         newsImage.alt = "Foto da Noticia"
         cardRight.appendChild(newsImage);
 
