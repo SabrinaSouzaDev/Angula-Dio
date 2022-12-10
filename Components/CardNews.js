@@ -67,7 +67,9 @@ class CardNews extends HTMLElement {
                 padding-left: 20px;
             }
             
-            
+            @media only screen and (max-width: 480px) {  
+            img {    width: 100%;  }
+            }
             
             .card_left> span{
                 font-weight:400;
