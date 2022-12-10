@@ -47,7 +47,7 @@ class CardNews extends HTMLElement {
         const style = document.createElement("style");
         style.textContent = `
             .card{
-                width: 90%;
+                width: 100%;
                 box-shadow: 10px 11px 29px -4px rgba(0,0,0,0.68);
                 -webkit-box-shadow: 10px 11px 29px -4px rgba(0,0,0,0.68);
                 -moz-box-shadow: 10px 11px 29px -4px rgba(0,0,0,0.68);;
@@ -68,8 +68,10 @@ class CardNews extends HTMLElement {
             }
             
             @media only screen and (max-width: 480px) {  
-            img {    width: 100%;  }
-            }
+                img {    width: 1px!important; }
+                }
+            
+                img {    width: 100%;  }
             
             .card_left> span{
                 font-weight:400;
